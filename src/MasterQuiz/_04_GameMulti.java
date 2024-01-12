@@ -29,7 +29,7 @@ public class _04_GameMulti {
 			// 정답 입력값 저장
 			int answer = Integer.parseInt(sc.nextLine());
 			
-			// 정답 시
+			// 정답 시 
 			if(answer == multi) {
 				// 점수 및 남은 게임 횟수 조작
 				score++;
