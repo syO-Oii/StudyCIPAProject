@@ -37,7 +37,7 @@ public class _04_GameMulti {
 				System.out.printf(" * 정답입니다! *\n * 현재 점수 : %d점\n\n", score);
 				// 점수 5점 획득 시 종료
 				if(score == 5) {
-					//sc.close();		// -------------------------------------------------->>> 질문하기
+					System.out.println("5점을 획득하여 게임이 종료됩니다!!!");
 					break;
 				}
 				// 점수가 5점이 아니라면 계속 진행
@@ -46,7 +46,7 @@ public class _04_GameMulti {
 				gameCount++;
 			}
 		}
-		sc.close();				// -------------------------------------------------->>> 왜 여기에 두면 오류가 나는지 궁금함
+		sc.close();
 		System.out.println("종료");
 		
 	}
