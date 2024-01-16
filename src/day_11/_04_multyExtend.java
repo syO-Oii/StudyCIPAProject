@@ -1,5 +1,9 @@
 package day_11;
 
+import day_11_02_Promotion.A;
+import day_11_02_Promotion.B;
+import day_11_02_Promotion.C;
+
 public class _04_multyExtend {
 	public static void main(String[] args) {
 		C c = new C();
