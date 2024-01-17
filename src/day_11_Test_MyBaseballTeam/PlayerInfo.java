@@ -1,6 +1,8 @@
 package day_11_Test_MyBaseballTeam;
 
-public class PlayerInfo {
+import java.io.Serializable;
+
+public class PlayerInfo implements Serializable {
 	String name;		// 이름
 	int backNum;		// 등번호
 	String position;	// 포지션 : 1루수 2루수 3루수 ... 선발 중계 마무리

@@ -27,7 +27,7 @@ public class _06_PromotionEx {
 		C c1 = e;
 		
 		B b3 = e;
-		C ce = d;
+		C c2 = d;
 		
 	}
 }

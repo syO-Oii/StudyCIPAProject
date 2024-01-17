@@ -1,5 +1,7 @@
 package day_11_Test_MyBaseballTeam;
 
+import java.util.ArrayList;
+
 public class MyFunction {
 	Boolean checkMenu = true;
 	
@@ -80,6 +82,17 @@ public class MyFunction {
 		System.out.println("│ 3. 이전 메뉴       │");
 		System.out.println("└──────────┘");
 	}
+	// 선수 정보 출력 메소드
+    public void printPlayers(ArrayList<PlayerInfo> list) {
+        for (PlayerInfo player : list) {
+            System.out.println("이름: " + player.name +
+                               ", 등번호: " + player.backNum +
+                               ", 포지션: " + player.position +
+                               ", 연봉: " + player.salary);
+        }
+    }
+    
+
 
 	
 }
