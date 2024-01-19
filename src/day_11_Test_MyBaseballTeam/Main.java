@@ -11,6 +11,7 @@ public class Main {
 		ArrayList<PlayerInfo> playerList = new ArrayList<>();	// 선수 명단
 		String selectMenu;
 		LoadFile load = new LoadFile();
+		SaveFile save;
 		
 		while(myFunction.getCheckMenu()) {
 			myFunction.disp();
@@ -50,7 +51,7 @@ public class Main {
 				
 			case "4":
 				// 파일 저장
-				SaveFile save = new SaveFile(playerList);
+				save = new SaveFile(playerList);
 				break;
 			case "5":
 				ArrayList<PlayerInfo> loadPlayerList = load.loadFile();
@@ -60,7 +61,7 @@ public class Main {
 					System.out.println("지금까지 작업한 내용을 저장하시겠습니까?  Y / N");
 					String checkSave = sc.nextLine();
 					if(checkSave.equals("Y") || checkSave.equals("y")) {
-						SaveFile save = new SaveFile(playerList);
+						save = new SaveFile(playerList);
 						System.out.println("저장이 완료되었습니다.");
 					}
 				}
